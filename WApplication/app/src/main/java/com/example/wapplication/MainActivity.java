@@ -2,6 +2,7 @@ package com.example.wapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -17,10 +18,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void handleText(View v){
-        TextView t = findViewById(R.id.source);
-        String input = t.getText().toString();
-        ((TextView)findViewById(R.id.changed)).setText(input);
-        Toast.makeText(this,"Welcome "+ input, Toast.LENGTH_LONG).show();
+
+    public void launchSettings(View v){
+        //launch new Activity
+        Intent i = new Intent(this,SettingsActivity.class);
+        startActivity(i);
     }
 }
