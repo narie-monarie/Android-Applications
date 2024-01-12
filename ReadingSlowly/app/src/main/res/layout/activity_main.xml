@@ -14,6 +14,7 @@
        android:orientation="horizontal"
        >
        <EditText
+           android:id="@+id/editText1"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:hint="First Name"
@@ -21,6 +22,7 @@
            />
 
        <EditText
+           android:id="@+id/editText2"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
            android:hint="Last Name"
@@ -31,6 +33,7 @@
    </LinearLayout>
 
     <EditText
+        android:id="@+id/editText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="BirthDay"
@@ -38,22 +41,42 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
         <EditText
+            android:id="@+id/editText4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Enter Here"
+            android:hint="Country"
             android:layout_weight="3"/>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApply"
+            android:onClick="clickFunction"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="SEND"
+            android:text="APPPLY"
+            app:cornerRadius="8dp"
             android:layout_weight="1"/>
 
     </LinearLayout>
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Hello"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="28dp"
+        />
+</LinearLayout>
 
 </LinearLayout>

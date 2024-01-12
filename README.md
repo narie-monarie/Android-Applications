@@ -16,5 +16,13 @@ dependencies{
 }
 ```
 
+```gradle
+ // system UI Controller
+    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
+
+    // Extended Icons
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
+```
+
 ## Application 001
 j![Login Screen](./Images/image.jpg)
