@@ -17,11 +17,21 @@ dependencies{
 ```
 
 ```gradle
- // system UI Controller
+    // system UI Controller
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 
     // Extended Icons
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
+```
+
+## Recent XML
+```sh
+on create -> on start -> on resume -> on pause -> on stop -> on destroy
+```
+
+## JetPack Compose
+```sh
+
 ```
 
 ## Application 001

@@ -17,6 +17,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.example.bankingapplication.components.homepage.BottomNavigationBar
+import com.example.bankingapplication.components.homepage.CardsSection
+import com.example.bankingapplication.components.homepage.FinanceSection
+import com.example.bankingapplication.components.homepage.WalletSection
 import com.example.bankingapplication.ui.theme.BankingApplicationTheme
 import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
@@ -62,13 +66,11 @@ fun HomeScreen() {
                 .fillMaxSize()
                 .padding(padding)
         ) {
-
+            WalletSection()
+            CardsSection()
+            Spacer(modifier = Modifier.height(16.dp))
+            FinanceSection()
+            //CurrenciesSection()
         }
-        //WalletSection
-        //CardsSection
-        Spacer(modifier = Modifier.height(16.dp))
-        //FinanceSection
-        //CurrenciesSection
-
     }
 }

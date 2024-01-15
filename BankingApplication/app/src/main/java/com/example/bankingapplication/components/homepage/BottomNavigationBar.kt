@@ -1,4 +1,4 @@
-package com.example.bankingapplication
+package com.example.bankingapplication.components.homepage
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Row
@@ -57,7 +57,10 @@ fun BottomNavigationBar() {
                         )
                     },
                     label = {
-                        Text(text = item.title, color = MaterialTheme.colorScheme.onBackground)
+                        Text(
+                            text = item.title,
+                            color = MaterialTheme.colorScheme.onBackground
+                        )
                     }
                 )
             }
