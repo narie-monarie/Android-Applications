@@ -22,6 +22,9 @@ dependencies{
 
     // Extended Icons
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
+
+    // Navigation
+    implementation ("androidx.navigation:navigation-compose:2.7.5")
 ```
 
 ## Recent XML
