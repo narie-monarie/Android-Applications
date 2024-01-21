@@ -38,4 +38,4 @@ on create -> on start -> on resume -> on pause -> on stop -> on destroy
 ```
 
 ## Application 001
-j![Login Screen](./Images/image.jpg)
+![Login Screen](./Images/image.jpg)
