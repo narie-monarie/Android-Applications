@@ -33,9 +33,7 @@ on create -> on start -> on resume -> on pause -> on stop -> on destroy
 ```
 
 ## JetPack Compose
-```sh
 
-```
 
 ## Application 001
 ![Login Screen](./Images/image.jpg)
