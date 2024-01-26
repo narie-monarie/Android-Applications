@@ -51,4 +51,4 @@ on create -> on start -> on resume -> on pause -> on stop -> on destroy
 
 - ViewModels
   - View -> ViewModel -> Model
-  - [mvvm](./Images/mvvm.jpg)
+  - ![mvvm](./Images/mvvm.jpg)
