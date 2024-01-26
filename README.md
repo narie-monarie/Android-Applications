@@ -28,16 +28,27 @@ dependencies{
 ```
 
 ## Recent XML
+
 ```sh
 on create -> on start -> on resume -> on pause -> on stop -> on destroy
 ```
 
 ## JetPack Compose
 
-
 ## Application 001
-![Login Screen](./Images/image.jpg)
 
+![Login Screen](./Images/image.jpg)
 
 - HorizontalPager
 - VerticalPager
+
+- Tasks, Back Stack & Launch Modes
+
+  - Types of launch Modes
+    - Single Top
+    - Single Task
+    - Single Instance
+
+- ViewModels
+  - View -> ViewModel -> Model
+  - [mvvm](./Images/mvvm.jpg)
