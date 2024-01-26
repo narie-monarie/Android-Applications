@@ -27,12 +27,6 @@ dependencies{
     implementation ("androidx.navigation:navigation-compose:2.7.5")
 ```
 
-## Recent XML
-
-```sh
-on create -> on start -> on resume -> on pause -> on stop -> on destroy
-```
-
 ## JetPack Compose
 
 ## Application 001
@@ -42,13 +36,32 @@ on create -> on start -> on resume -> on pause -> on stop -> on destroy
 - HorizontalPager
 - VerticalPager
 
-- Tasks, Back Stack & Launch Modes
+## Activity Life Cycle
 
-  - Types of launch Modes
-    - Single Top
-    - Single Task
-    - Single Instance
+![lifeCycle](./Images/lifec.jpg)
 
-- ViewModels
-  - View -> ViewModel -> Model
-  - ![mvvm](./Images/mvvm.jpg)
+```sh
+oncreate()
+    |
+ onstart()
+    |
+ onresume()
+    |
+ onpause()
+    |
+ onstop()
+    |
+ ondestroy()
+```
+
+## Tasks, Back Stack & Launch Modes
+
+- Types of launch Modes
+  - Single Top
+  - Single Task
+  - Single Instance
+
+## ViewModels
+
+- View -> ViewModel -> Model
+  ![mvvm](./Images/mvvm.jpg)
