@@ -6,7 +6,7 @@ data class NFT(
     val title: String,
     val subtitle: String,
     val image: Int,
-    val likes: Int,
+    var likes: Int,
     val eth: Double,
     val id: UUID = UUID.randomUUID()
 )
