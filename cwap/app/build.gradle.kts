@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.week2challenge"
+    namespace = "com.example.cwap"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.week2challenge"
+        applicationId = "com.example.cwap"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -50,7 +50,6 @@ android {
 }
 
 dependencies {
-    implementation ("androidx.compose.ui:ui-text-google-fonts:1.6.0")
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
@@ -67,6 +66,4 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
-
-    implementation("com.google.accompanist:accompanist-systemuicontroller:0.27.0")
 }
