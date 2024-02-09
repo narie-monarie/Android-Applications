@@ -10,6 +10,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import com.example.cwap.screens.HomeScreen
+import com.example.cwap.screens.LastScreen
+import com.example.cwap.screens.SecondScreen
 import com.example.cwap.ui.theme.CwapTheme
 
 class MainActivity : ComponentActivity() {
@@ -22,6 +29,24 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+                    val navController = rememberNavController()
+
+                    NavHost(
+                        navController = navController,
+                        startDestination = Screen.Home.rout
+                    ){
+                        composable(Screen.Home.rout){
+                            HomeScreen(navController = navController)
+                        }
+
+                        composable(Screen.Second.rout){
+                            SecondScreen(navController = navController)
+                        }
+
+                        composable(Screen.Last.rout){
+                            LastScreen(navController = navController)
+                        }
+                    }
                 }
             }
         }
